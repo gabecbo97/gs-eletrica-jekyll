@@ -1,9 +1,45 @@
-<nav class="navbar bg-body-tertiary">
+<nav class="navbar navbar-default">
     <div class="container-fluid">
-      <a class="navbar-brand">Navbar</a>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+        <a href="/" class="navbar-brand"><img src="/assets/icons/logo.svg" class="img-logo" alt=""></a>
+        <form class="d-flex mt-3" role="search">
+            <a class="links-nav" href="#top">início</a>
+            <a class="links-nav" href="#services">Serviços</a>
+            <a class="links-nav" href="#contacts">Contato</a>
+        </form>
     </div>
-  </nav>
+</nav>
+
+
+<style>
+    .navbar-default {
+        transition: 500ms ease;
+        background: #2E3094;
+        position: fixed;
+        width: 100vw;
+        height: 80px;
+    }
+
+    .navbar-default.scrolled {
+        background: white;
+    }
+
+    .img-logo {
+        max-width: 250px;
+        margin-left: 1vw;
+
+    }
+    .links-nav{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0 20px;
+        padding: 5px;
+        transition: 500ms;
+    }
+    .links-nav:hover{
+        background-color: white;
+        color: #2E3094;
+    }
+</style>
